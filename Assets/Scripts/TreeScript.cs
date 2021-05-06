@@ -9,7 +9,7 @@ public class TreeScript : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-          timer = 5.0f;
+          timer = 2.5f;
           startBurning = false;
     }
 
@@ -29,7 +29,7 @@ public class TreeScript : MonoBehaviour
      private void OnTriggerEnter(Collider other)
      {
           if (other.name.Equals("Player")) {
-               Debug.Log("player is burning me to a crisp");
+               //Debug.Log("player is burning me to a crisp");
                startBurning = true;
           }
      }
